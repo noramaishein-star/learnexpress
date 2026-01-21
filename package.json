@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ./server.js localhost 3000"
+    "start": "nodemon -e js,json,njk ./server.js localhost 3000"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/noramaishein-star/learnexpress#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "nunjucks": "^3.2.4"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
