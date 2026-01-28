@@ -1,0 +1,42 @@
+{% extends "partians/layout.njk" %} 
+{% block title %}About Us{% endblock %}
+{% block content %}
+  <h1>About Us!</h1>
+  <table class="table">
+    <tbody>
+      <tr>
+        <th>Name</th>
+        <td>{{ name }}</td>
+      </tr>
+
+      <tr>
+        <th>Age</th>
+        <td>{{ age }}</td>
+      </tr>
+
+      <tr>
+        <th>Bio</th>
+        <td>{{ bio }}</td>
+      </tr>
+
+      <tr>
+        <th>Birth day</th>
+        <td>{{ bday }}</td>
+      </tr>
+
+      <tr>
+        <th>Food order</th>
+        <td>{{ food }}</td>
+      </tr>
+      
+      <tr>
+        <th>Starter pokemon</th>
+        <td>{{ pokemon }}</td>
+      </tr>
+      
+      <tr>
+        <th>Fruit</th>
+        <td>{{ fruit }}</td>
+      </tr>
+
+{% endblock %}

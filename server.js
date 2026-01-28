@@ -6,7 +6,7 @@ const port = 3000
 nunjucks.configure('views', {
   autoescape: true,
   express: app
-});s
+});
 
 app.get('/', (req, res) => {
   let name = 'Nora Mai';
@@ -32,6 +32,14 @@ app.get('/contact', (req, res) => {
 
 app.get('/form', (req, res) => {
   res.render('form.njk')
+}); 
+
+app.get('/answers', (req, res) => {
+  let answers  = req.query;
+  answers.cool = req.query.cool === 'on' ? true : false;
+  answers.age = parseInt(answers.age);
+  answers.like = parseInt(answers.like);
+  res.render('answers.njk', answers);
 }); 
 
 app.listen(port, () => {
