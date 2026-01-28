@@ -1,0 +1,67 @@
+{% extends "partians/layout.njk" %} 
+{% block title %}About Us{% endblock %}
+{% block content %}
+
+  <h1>Form</h1>
+  <form>
+    <div class="mb-3">
+  <label for="name" class="form-label">Name</label>
+  <input name="text" class="form-control" id="name" placeholder="write your name">
+</div>
+<div class="mb-3">
+  <label for="age" class="form-label">Age</label>
+  <input name="number" min="0" id="age" class="form-control" placeholder="write youre age"></textarea>
+</div>
+<div class="mb-3">
+  <label for="bio" class="form-label">bio</label>
+  <textarea class="form-control" id="bio" rows="4" placeholder="write something about you"></textarea>
+</div>
+<div class="mb-3">
+  <label for="bday" class="form-label">Age</label>
+  <input name="date" class="form-control" id="bday" placeholder="write youre birth date"></textarea>
+</div>
+  <label for="favcolor" class="form-label">Favourite color</label>
+  <input name="color" class="form-control" id="favecolor"></textarea>
+</div>
+<div class="mb-3">
+<p>Food order</p>
+ <input name="cocane" type="radio" class="form-check-input" id="cocane">
+ <label for="cocane" class="form-label">Cocane</label>
+ <input name="burger" type="radio" class="form-check-input" id="burger">
+ <label for="burger" class="form-label">Burger</label>
+ <input name="noramai" type="radio" class="form-check-input" id="noramai">
+ <label for="noramai" class="form-label">NoraMai</label>
+ <input name="cake" type="radio" class="form-check-input" id="cake">
+ <label for="cake" class="form-label">Cake</label>
+ </div>
+<div class="mb-3">
+<p>Choose your starter pokemon</p>
+ <input name="pokemon" type="radio" class="form-check-input" id="bulbasaur">
+ <label for="bulbasaur" class="form-label">Bulbasaur</label>
+ <input name="pokemon" type="radio" class="form-check-input" id="pikachu">
+ <label for="pikachu" class="form-label">Pikachu</label>
+ <input name="noramai" type="radio" class="form-check-input" id="noramai">
+ <label for="noramai" class="form-label">NoraMai</label>
+ <input name="eve" type="radio" class="form-check-input" id="eve">
+ <label for="eve" class="form-label">Eve</label>
+ </div>
+<div class="mb-3">
+   <label for="fruit" class="form-label">Favourite fruit</label>
+   <select for="fruit" class="form-select">
+     <option disabled selected>Select fruit</option>
+     <option>Melon</option>
+     <option>Pear</option>
+     <option>Apple</option>
+     <option>Orange</option>
+     <option>Coconut</option>
+</div>
+<div class="mb-3">
+   <label for="like" class="form-label">How much do you like this form?</label>
+   <select for="range" class="form-range" id="like"></div>
+</div>
+
+<input type="submit" class="btn btn-primary">
+<button class="btn btn-primary">Send</button>
+
+  </form>
+{% endblock %}
