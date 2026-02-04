@@ -1,0 +1,46 @@
+{% extends "partians/layout.njk" %} 
+{% block title %}New cat{% endblock %}
+{% block content %}
+  <h1>Edit {{cat.name}}</h1>
+  <form action="/cats/edit?id={{cat.id}}" method="POST">
+   <div class="mb-3">
+  <label for="name" class="form-label">Name</label>
+  <input value="{{cat.name}}" type="text" class="form-control" id="name" placeholder="write cat name">
+</div>
+   <div class="mb-3">
+  <label for="birthyear" class="form-label">Birth year</label>
+  <input value="{{cat.birthyear}}" type="number" class="form-control" id="birthyear" placeholder="write cats birth year">
+</div>
+<div class="mb-3">
+   <label for="gender" class="form-label">Gender</label>
+   <select name="gender" class="form-select">
+     <option disabled selected>Select gender</option>
+     {% if cat.gender == 'Male' %}
+     <option selcted>Male</option>
+     {% else %}
+     <option>Male</option>
+     {% endif %}
+
+     {% if cat.gender == 'Female' %}
+     <option selcted>Female</option>
+     {% else %}
+     <option>Female</option>
+     {% endif %}
+
+    </select>
+</div>
+   <div class="mb-3">
+  <label for="color" class="form-label">Color</label>
+  <input value="{{cat.color}}" type="text" class="form-control" id="birthyear" placeholder="write color">
+  </div>
+   <div class="mb-3">
+  <label for="eyes" class="form-label">Eyes</label>
+  <input value="{{cat.eyes}}" type="text" class="form-control" id="birthyear" placeholder="write eyes color">
+</div>
+   <div class="mb-3">
+  <label for="spayed" class="form-label">Spayed</label>
+  <input {% if cat.spayed %}checked{% endif %} name="spayed" type="checkbox" class="form-check-input" id="spayed" placeholder="write eyes color">
+</div>
+<button class="btn btn-primary">Upedate cat</button>
+</form>
+{% endblock %}

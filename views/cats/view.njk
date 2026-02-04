@@ -1,0 +1,44 @@
+{% extends "partians/layout.njk" %} 
+{% block title %}{{cat.name}}{% endblock %}
+{% block content %}
+  <h1>{{cat.name}}</h1>
+  <table class="table">
+    <tbody>
+      
+      <tr>
+        <th>id</th>
+        <td>{{ cat.id }}</td>
+      </tr>
+
+      <tr>
+        <th>name</th>
+        <td>{{ cat.name }}</td>
+      </tr>
+
+      <tr>
+        <th>Bday</th>
+        <td>{{ cat.birthday }}</td>
+      </tr>
+
+      <tr>
+        <th>Gender</th>
+        <td>{{ cat.gender }}</td>
+      </tr>
+
+      <tr>
+        <th>Color</th>
+        <td>{{ cat.color }}</td>
+      </tr>
+      
+      <tr>
+        <th>Eyes</th>
+        <td>{{ cat.eyes }}</td>
+      </tr>
+      
+      <tr>
+        <th>Spayed</th>
+        <td>{{ cat.spayed }}</td>
+      </tr>
+      </tbody>
+      </table>
+{% endblock %}
