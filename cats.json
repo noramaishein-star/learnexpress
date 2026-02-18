@@ -16,5 +16,14 @@
     "color": "white/black",
     "eyes": "blue",
     "spayed": true
+    },
+    {
+        "name": "zsg",
+        "birthyear": 222,
+        "gender": "Male",
+        "color": "black",
+        "eyes": "hazel",
+        "spayed": true,
+        "id": 3
   }
 ]
