@@ -1,21 +1,21 @@
 [
-  {
-    "id": 1,
-    "name": "Kriisha",
-    "birthyear": 2020,
-    "gender": "Feamale",
-    "color": "black/orange",
-    "eyes": "hazel",
-    "spayed": false
-  },
-  {
-    "id": 2,
-    "name": "Basiilik",
-    "birthyear": 2014,
-    "gender": "Feamale",
-    "color": "white/black",
-    "eyes": "blue",
-    "spayed": true
+    {
+        "id": 1,
+        "name": "Kriisha",
+        "birthyear": 2020,
+        "gender": "Feamale",
+        "color": "black/orange",
+        "eyes": "hazel",
+        "spayed": false
+    },
+    {
+        "id": 2,
+        "name": "Basiilik",
+        "birthyear": 2014,
+        "gender": "Feamale",
+        "color": "white/black",
+        "eyes": "blue",
+        "spayed": true
     },
     {
         "name": "zsg",
@@ -25,5 +25,5 @@
         "eyes": "hazel",
         "spayed": true,
         "id": 3
-  }
+    }
 ]
