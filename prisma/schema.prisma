@@ -13,8 +13,8 @@ datasource db {
 model Cat { 
   id        Int      @id @default(autoincrement()) 
   name      String
-  birtyear  Int
-  gender    Boolean
+  birthyear  Int
+  gender    String
   color     String
   eyes      String
   spayed    Boolean
