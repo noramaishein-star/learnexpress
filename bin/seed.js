@@ -1,7 +1,7 @@
 import { prisma } from "../lib/prisma.js";
 import { faker } from '@faker-js/faker';
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 100; i++) {
 const cat = await prisma.cat.create({
     data: {
         name: faker.animal.petName(),
