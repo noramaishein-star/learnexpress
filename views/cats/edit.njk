@@ -5,11 +5,11 @@
   <form action="/cats/edit?id={{cat.id}}" method="POST">
    <div class="mb-3">
   <label for="name" class="form-label">Name</label>
-  <input value="{{cat.name}}" type="text" class="form-control" id="name" placeholder="write cat name">
+  <input name="name" value="{{cat.name}}" type="text" class="form-control" id="name" placeholder="write cat name">
 </div>
    <div class="mb-3">
   <label for="birthyear" class="form-label">Birth year</label>
-  <input value="{{cat.birthyear}}" type="number" class="form-control" id="birthyear" placeholder="write cats birth year">
+  <input name="birthyear" value="{{cat.birthyear}}" type="number" class="form-control" id="birthyear" placeholder="write cats birth year">
 </div>
 <div class="mb-3">
    <label for="gender" class="form-label">Gender</label>
@@ -31,11 +31,11 @@
 </div>
    <div class="mb-3">
   <label for="color" class="form-label">Color</label>
-  <input value="{{cat.color}}" type="text" class="form-control" id="birthyear" placeholder="write color">
+  <input name="color" value="{{cat.color}}" type="text" class="form-control" id="birthyear" placeholder="write color">
   </div>
    <div class="mb-3">
   <label for="eyes" class="form-label">Eyes</label>
-  <input value="{{cat.eyes}}" type="text" class="form-control" id="birthyear" placeholder="write eyes color">
+  <input name="eyes" value="{{cat.eyes}}" type="text" class="form-control" id="birthyear" placeholder="write eyes color">
 </div>
    <div class="mb-3">
   <label for="spayed" class="form-label">Spayed</label>
